@@ -15,7 +15,9 @@ const Home = (props) => {
           />
         </div>
         <div className="m-5">
-          <TablePassEncrypted />
+          <TablePassEncrypted
+            passToEncrypt={props.passToEncrypt}
+          />
         </div>
       </div>
     </Container>

@@ -4,7 +4,7 @@ import { Table } from 'reactstrap';
 class TablePassEncrypted extends Component {
 
   encryptPassword = () => {
-    return this.props.password + ' encrypted';
+    return this.props.passToEncrypt + ' encrypted';
   }
 
   render() {
@@ -36,7 +36,7 @@ class TablePassEncrypted extends Component {
 }
 
 TablePassEncrypted.defaultProps = {
-  password: "test"
+  passToEncrypt: "test"
 }
 
 export default TablePassEncrypted;
