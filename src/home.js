@@ -14,7 +14,7 @@ const Home = (props) => {
               <Row>
                 <Col sm={{ span: 10, offset: 1 }}>
                   <p className="lead text-center text-info">Use this application to encrypt a password and see
-                    the result with different encryption algorithms.
+                    the results with different encryption algorithms.
                   </p>
                   <FormPassword
                     passToEncrypt={props.passToEncrypt}
