@@ -52,10 +52,14 @@ class TablePassEncrypted extends Component {
         <thead>
           <tr>
             <th style={{width: '20%'}}>Method</th>
-            <th style={{width: '80%'}}>Username</th>
+            <th style={{width: '80%'}}>Encrypted</th>
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <th scope="row">Clear password</th>
+            <td>{this.props.passToEncrypt}</td>
+          </tr>
           <tr>
             <th scope="row">Standard Des</th>
             <td>{this.encryptPassword('des')}</td>

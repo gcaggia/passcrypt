@@ -1,30 +1,29 @@
 import React from 'react';
-import {Form, FormGroup, Label, Col, Input, Button } from 'reactstrap';
+import {Form, FormGroup, Label, Col, Input, Button, InputGroupAddon, InputGroup } from 'reactstrap';
+import Pluralize from 'pluralize';
 
 const FormPassword = (props) => {
 
-  // handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   console.log('A password was submitted: ');
-  // }
   return (
     <Form className="mt-5">
       <FormGroup row>
-        <Label for="inputPassword" sm={2} className="font-weight-bold">Password</Label>
-        <Col sm={10}>
-          <Input
-            type="text"
-            name="password"
-            id="inputPassword"
-            placeholder="Enter Password you want to encrypt"
-            value={props.passToEncrypt}
-            onChange={(e) => props.setPassToEncrypt(e.target.value)}
-          />
-        </Col>
-      </FormGroup>
-      <FormGroup check row>
-        <Col sm={{ size: 8, offset: 2 }}>
-          <Button type="submit" color="info" size="lg">Encrypt</Button>
+        <Label for="inputPassword" sm={3} className="font-weight-bold">Enter a password</Label>
+        <Col sm={9}>
+          <InputGroup>
+            <Input
+              type="text"
+              name="password"
+              id="inputPassword"
+              placeholder="Enter Password you want to encrypt"
+              value={props.passToEncrypt}
+              onChange={(e) => props.setPassToEncrypt(e.target.value)}
+            />
+            <InputGroupAddon addonType="append">
+              <Button color="secondary">
+                { props.passToEncrypt.length + ' ' + Pluralize('character', props.passToEncrypt.length || 1) }
+              </Button>
+            </InputGroupAddon>
+          </InputGroup>
         </Col>
       </FormGroup>
     </Form>
