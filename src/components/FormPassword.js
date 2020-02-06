@@ -29,6 +29,6 @@ const FormPassword = (props) => {
       </FormGroup>
     </Form>
   );
-}
+};
 
 export default FormPassword;

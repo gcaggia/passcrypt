@@ -13,7 +13,7 @@ class TablePassEncrypted extends Component {
       return crypto.createHash(hash).update(password).digest("hex");
     }
     return '';
-  }
+  };
 
   encryptPassword = (algorithm) => {
     const password = this.props.passToEncrypt;
@@ -24,7 +24,7 @@ class TablePassEncrypted extends Component {
       return crypted;
     }
     return '';
-  }
+  };
 
   encodeBase64 = () => {
     const password = this.props.passToEncrypt;
@@ -32,11 +32,11 @@ class TablePassEncrypted extends Component {
       return Buffer.from(password).toString('base64')
     }
     return '';
-  }
+  };
 
   decodeBase64 = (data) => {
     return Buffer.from(data, 'base64').toString('ascii');
-  }
+  };
 
   uuencodePassword = () => {
     const password = this.props.passToEncrypt;
@@ -44,7 +44,7 @@ class TablePassEncrypted extends Component {
       return uuencode.encode(password);
     }
     return '';
-  }
+  };
 
   render() {
     return(
@@ -88,6 +88,6 @@ class TablePassEncrypted extends Component {
 
 TablePassEncrypted.defaultProps = {
   passToEncrypt: "test"
-}
+};
 
 export default TablePassEncrypted;

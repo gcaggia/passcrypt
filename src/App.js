@@ -1,7 +1,8 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import Header from './Header';
-import Home   from './home';
+import Header               from './Header';
+import Home                 from './home';
+import Footer               from './Footer';
 
 class App extends Component {
 
@@ -17,12 +18,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header />
         <Home
           passToEncrypt={this.state.passToEncrypt}
           setPassToEncrypt={this.handleChangePassToEncrypt}
         />
+        <Footer/>
       </div>
     );
   }
