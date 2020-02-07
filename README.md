@@ -1,7 +1,7 @@
 ## Passcrypt
 Passcrypt is a simple application that encrypt a given password using popular encryption algorithms.
 
-Have a look: [https://github.com/gcaggia/passcrypt](https://github.com/gcaggia/passcrypt)
+Have a look: [https://github.com/gcaggia/passcrypt](https://gcaggia.github.io/passcrypt/)
 
 ![screenshot of the application](https://gcaggia.github.io/passcrypt/img/screenapp.jpeg)
 
