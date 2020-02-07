@@ -10,11 +10,11 @@ const Header = () => {
       <IconContext.Provider value={{ color: "white", size: "35px" }}>
         <MdHttps />
       </IconContext.Provider>
-      <h3 className=" ml-3 my-0 mr-md-auto font-weight-normal" > Passcrypt </h3>
+      <h3 className="ml-3 my-0 mr-md-auto font-weight-normal" > Passcrypt </h3>
       { /*<Header/>*/ }
       <Nav className="mr-lg-5 my-2 my-md-0">
-        <a className="text-white" href="#" > Fork me on Github </a>
-        <GithubCorner href="https://github.com/username/repo" />
+        <a className="text-white" href="https://github.com/gcaggia/passcrypt">Fork me on Github</a>
+        <GithubCorner href="https://github.com/gcaggia/passcrypt" />
       </Nav>
     </div>
   );
